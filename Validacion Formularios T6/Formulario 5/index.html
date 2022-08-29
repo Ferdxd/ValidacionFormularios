@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulario 5</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="card-body" style="width: 50rem;">
+                <h5 class="card-title">Cotizacion de Vehiculo</h5>
+                <form action="" id="formulario">
+                    <div class="form-group row border">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Nombre(*):</label>
+                                <input id="nombre" name="nombre" type="text" class="form-control" required>
+                                <p id="errornombre" class="d-none text-danger">Solo letras</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Direccion(*):</label>
+                                <input id="direccion" name="direccion" type="text" class="form-control" required>
+                                <p id="errordireccion" class="d-none text-danger">No es el fromato de fecha (dd/mm/yy</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Numero de NIT(*):</label>
+                                <input id="nit" name="nit" type="text" class="form-control" required>
+                                <p id="errornit" class="d-none text-danger">solo numeros y 10 digitos</p>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Correo(*):</label>
+                                <input id="correo" name="correo" type="email" class="form-control" required>
+                                <p id="errorcorreo" class="d-none text-danger">El formato es: example@miemail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Telefono(*):</label>
+                                <input id="telefono" name="telefono" type="text" class="form-control" required>
+                                <p id="errortelefono" class="d-none text-danger">solo numeros y maximo 11 digitos</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Tipo de Vehiculo(*):</label>
+                                <select id="tipo" name="tipo" class="custom-select">
+                                    <option value="">Pick-Up</option>
+                                    <option value="">Sedan</option>
+                                    <option value="">Suv</option>
+                                    <option value="">Van</option>
+                                  </select>
+                                  <p id="errortipo" class="d-none text-danger">solo numeros</p>
+                            </div>
+                        </div>
+                      
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Numero de acientos(*):</label>
+                                <input id="acientos" name="acientos" type="text" class="form-control" required>
+                                <p id="erroracientos" class="d-none text-danger">solo numeros</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Año(*):</label>
+                                <input id="anio" name="anio" type="text" class="form-control" required>
+                                <p id="erroranio" class="d-none text-danger">solo numeros</p>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="submit"><i class="fa fa-send"> Enviar</i></button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </form>
+                
+            </div>  
+        </div>
+    </div>
+    
+     <script src="validacion.js"></script>
+</body>
+</html>

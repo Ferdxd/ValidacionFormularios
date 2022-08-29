@@ -1,0 +1,141 @@
+html,
+body {
+    height: 100%
+}
+
+body {
+    background-color: #00CAE2;
+    display: grid;
+    place-items: center
+}
+
+
+.c1 {
+    background-color: #fff2f1;
+    border-radius: 20px
+}
+
+a {
+    margin: 0px;
+    font-size: 13px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black
+}
+
+a:hover {
+    color: #e0726c;
+    background-color: #fff2f1
+}
+
+.nav-link {
+    padding: 1rem 1.4rem;
+    margin: 0rem 0.7rem
+}
+
+.ac {
+    font-weight: bold;
+    color: #00b7ff;
+    font-size: 12px
+}
+::placeholder{
+    color: white;
+}
+input{
+    width: 48%;
+    background-color: #00b7ff;
+    border-radius: 8px;
+    padding: 8px 17px;
+    font-size: 13px;
+    border: 1px solid #f5f0ef;
+    color: #dccece;
+}
+input:focus{
+    color: white;
+} 
+.alinear{
+    width: 60%;
+    display: inline;
+}
+
+.error{
+    outline: none;
+    color: red;
+    border: 2px solid red;
+    background-color: white;
+
+}
+.error:focus{
+    outline: none;
+    color: red;
+    border: 2px solid red;
+    background-color: white;
+    
+} 
+.error p{
+    color: red;
+} 
+
+.todo{
+    width: 96%;
+}
+
+textarea{
+    width: 96%;
+    background-color: #00b7ff;
+    border-radius: 8px;
+    padding: 8px 17px;
+    font-size: 13px;
+    border: 1px solid #f5f0ef;
+    color: white;
+}
+textarea :focus{
+    text-decoration: none;
+}
+button {
+    width: 96%;
+    background-color: #00b7ff;
+    border-radius: 8px;
+    padding: 8px 17px;
+    font-size: 13px;
+    border: 1px solid #f5f0ef;
+    color: #dccece;
+}
+
+input {
+    text-decoration: none
+}
+
+.bt {
+    background-color: #00b7ff;
+    border: 1px solid rgb(300, 200, 200)
+}
+
+form {
+    margin-top: 70px
+}
+
+form>* {
+    margin: 10px 0px
+}
+
+#forgot {
+    margin: 0px -60px
+}
+
+#register {
+    text-align: center
+}
+
+
+.wlcm {
+    font-size: 30px
+}
+
+.sp1 {
+    font-size: 5px
+}
+
+.sp1>span {
+    background-color: #00CAE2
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulario 2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="card-body" style="width: 50rem;">
+                <h5 class="card-title">Reservacion de habitacion</h5>
+                <form action="" id="formulario">
+                    <div class="form-group row border">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Nombre(*):</label>
+                                <input id="nombre" name="nombre" type="text" class="form-control" required>
+                                <p id="errornombre" class="d-none text-danger">Solo letras</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Fecha Entrada(*):</label>
+                                <input id="fecha" name="fecha" type="text" class="form-control" required>
+                                <p id="errorfecha" class="d-none text-danger">No es el fromato de fecha (dd/mm/yy</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Fecha Salida(*):</label>
+                                <input id="fechasalida" name="fechasalida" type="text" class="form-control" required>
+                                <p id="errorfechasalida" class="d-none text-danger">No es el fromato de fecha (dd/mm/yy</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Pais(*):</label>
+                                <input id="pais" name="direccion" type="text" class="form-control">
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Numero de NIT(*):</label>
+                                <input id="nit" name="nit" type="text" class="form-control" required>
+                                <p id="errornit" class="d-none text-danger">solo numeros y 10 digitos</p>
+                            </div>
+                        </div>
+                    
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Correo(*):</label>
+                                <input id="correo" name="correo" type="email" class="form-control" required>
+                                <p id="errorcorreo" class="d-none text-danger">El formato es: example@miemail.com</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Telefono(*):</label>
+                                <input id="telefono" name="telefono" type="text" class="form-control" required>
+                                <p id="errortelefono" class="d-none text-danger">solo numeros y maximo 11 digitos</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Acompañantes(*):</label>
+                                <input id="acompañantes" name="acompañantes" type="number" class="form-control" required>
+                                <p id="erroracompañantes" class="d-none text-danger">solo numeros</p>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <label>Niños(*):</label>
+                                <select id="niños" name="niños" class="custom-select">
+                                    <option value="Fronted_Developer">2</option>
+                                    <option value="Cocinero">3</option>
+                                    <option value="Tecnico">4</option>
+                                  </select>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="form-group">
+                                <button class="btn btn-primary" type="submit"><i class="fa fa-send"> Enviar</i></button>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </form>
+                
+            </div>  
+        </div>
+    </div>
+    
+     <script src="validacion.js"></script>
+</body>
+</html>
